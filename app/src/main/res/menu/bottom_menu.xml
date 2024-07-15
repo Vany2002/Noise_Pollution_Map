@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/map"
+        android:enabled="true"
+        android:icon="@drawable/baseline_map"
+        android:title="@string/map"/>
+    <item
+        android:id="@+id/shum"
+        android:enabled="true"
+        android:icon="@drawable/baseline_volume_up"
+        android:title="@string/shum"/>
+    <item
+        android:id="@+id/statistics"
+        android:enabled="true"
+        android:icon="@drawable/baseline_statistics"
+        android:title="@string/statistics"/>
+    <item
+        android:id="@+id/info"
+        android:enabled="true"
+        android:icon="@drawable/baseline_info"
+        android:title="@string/info"/>
+</menu>

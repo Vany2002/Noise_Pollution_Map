@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/myLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_place_24"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/switchNoise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваш текст"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/zoomIn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/zoom_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/halfHorizontal"
+        android:background="@drawable/box_rounded"
+        android:backgroundTint="@color/mapButtonColor"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"/>
+
+    <ImageView
+        android:id="@+id/zoomOut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/zoom_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/box_rounded"
+        android:backgroundTint="@color/mapButtonColor"
+        app:layout_constraintTop_toBottomOf="@+id/halfHorizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/halfHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
